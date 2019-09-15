@@ -1,0 +1,228 @@
+/*
+[Table of Contents]
++All Device	
+ -Navigation
++Desktop
+ -Banner	
+ -Quote
+ -Footer	
++Medium Device
+ -Banner
+ -Service
+ -Quote
+ -Creative Service
+ -Bottom Area
++Small Device
+ -Common	
+ -Banner	
+ -Service
+ -Creative Service
+ -Subscription
+ -Bottom Area
+*/
+/*************** All Device	 ***************/
+/*****---------- Navigation ----------*****/
+.js #main-menu {
+	display: none;
+}
+
+.js .slicknav_menu {
+	display: block;
+}
+
+/*************** Desktop ***************/
+@media screen and (max-width: 1300px) {
+
+	/*****---------- Banner	 ----------*****/
+	.chart-item p {
+		width: 50%;
+	}
+
+	.down-item .chart-item:before,
+	.chart-item:after,
+	.upper-item .chart-item:before {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+
+	/*****---------- Quote ----------*****/
+	.quote-content p {
+		width: 100%;
+	}
+
+	.quote-content .line:before {
+		display: none;
+	}
+
+	.quote-content h4 {
+		margin-bottom: 20px;
+	}
+
+	/*****---------- Footer	 ----------*****/
+	footer .col-md-2 {
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+}
+
+/*************** Medium Device ***************/
+@media screen and (max-width: 991px) {
+
+	/*****---------- Banner ----------*****/
+	.banner h1 {
+		font-size: 38px;
+		line-height: 38px;
+		padding-top: 100px;
+	}
+
+	.grap-chert {
+		padding: 200px 0px;
+	}
+
+	.chart-item {
+		height: 150px;
+		width: 100px;
+	}
+
+	.chart-item p {
+		font-size: 10px;
+		line-height: 17px;
+		width: 150px;
+	}
+
+	.down-item .chart-item:before,
+	.chart-item:after,
+	.upper-item .chart-item:before {
+		display: none;
+	}
+
+	.top-left,
+	.bottom-left {
+		bottom: 51%;
+		left: 5%;
+	}
+
+	.top-middle,
+	.bottom-middle {
+		bottom: 51%;
+		left: 40%;
+	}
+
+	.top-right,
+	.bottom-right {
+		bottom: 52%;
+		right: 10%;
+	}
+
+	/*****---------- Service ----------*****/
+	.feture-service-content {
+		margin-bottom: 50px;
+	}
+
+	/*****---------- Quote ----------*****/
+	.quote-content {
+		margin: 0;
+		padding: 20px 0px;
+	}
+
+	/*****---------- Creative Service ----------*****/
+	.creative-service-item h4 {
+		font-size: 18px;
+	}
+
+	/*****---------- Bottom Area ----------*****/
+	.bottome-area {
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	.bottome-area p {
+		margin-bottom: 0;
+		padding-top: 20px;
+	}
+
+	.bottome-area a {
+		padding-top: 5px;
+	}
+}
+
+/*************** Small Device ***************/
+@media screen and (max-width: 500px) {
+
+	/*****---------- Common	 ----------*****/
+	.section-tittle h1 {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.section-tittle p {
+		font-size: 12px;
+		line-height: 18px;
+		width: 100%;
+	}
+
+	/*****---------- Banner	 ----------*****/
+	.banner h1 {
+		font-size: 28px;
+		line-height: 28px;
+	}
+
+	.top-left,
+	.bottom-left {
+		left: 0;
+	}
+
+	.top-middle,
+	.bottom-middle {
+		bottom: 51%;
+		left: 40%;
+	}
+
+	.top-right,
+	.bottom-right {
+		bottom: 52%;
+		left: 75%;
+	}
+
+	.chart-item p {
+		width: 85%;
+	}
+
+	/*****---------- Service ----------*****/
+	.feture-service-content h1 {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	/*****---------- Creative Service ----------*****/
+	.creative-service-item h4 {
+		font-size: 18px;
+	}
+
+	.creative-service-item {
+		padding: 25px;
+	}
+
+	/*****---------- Subscription ----------*****/
+	.subscription-content h1 {
+		font-size: 18px;
+	}
+
+	.subscription-content p {
+		width: 100%;
+		font-size: 14px;
+	}
+
+	.subscription-content input[type=text] {
+		margin-bottom: 20px;
+	}
+
+	/*****---------- Bottom Area ----------*****/
+	.bottome-area p,
+	.bottome-area a {
+		font-size: 12px;
+		margin: 0;
+	}
+}
